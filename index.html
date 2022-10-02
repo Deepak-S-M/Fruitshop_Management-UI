@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title>Fruit Shop</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <script src="fruitscript.js"></script>
+        <div class="home">
+            <div class="top">
+                <div class="head">FRUIT SHOP MANAGEMENT</div>
+            </div>
+            <div class="body">                
+            <div class="bar">
+                <div class="menubar">
+                <div class="icon"><i class="fas fa-bars"></i></div>
+                <div class="menu">MENU</div>
+                <div class="clr"></div>
+                </div>               
+                <input type="button" class="nav" onclick="conFruits()" value="VIEW Fruits"></button>
+                <input type="button" class="nav" onclick="conStack()" value="VIEW STACK">
+                <input type="button" class="nav"  onclick="conAdd()" value="ADD STACK">
+                <input type="button" class="nav" onclick="conBill()" value="BILL">                 
+                <div class="menubar">
+                    <div class="icon"><i class='far fa-clipboard'></i></div>
+                    <div class="menu">REPORT</div>
+                    <div class="clr"></div>
+                </div>
+                <input type="button" class="nav" onclick="conReport()" value="DEILY REPORT">
+                <input type="button" class="nav" onclick="conReport()" value="WEEKLY REPORT">
+                <input type="button" class="nav" onclick="conReport()" value="MONTHLY REPORT">
+            </div>          
+            <div class="content" >
+                <div class="con-fruits" id="con-fruits"><table>
+                        <tr> <td><div class="pic-img"><img src="ojt fruits/Apple.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Banana.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Blueberries.jpg"></div></td> <td><div class="pic-img"><img src="ojt fruits/Cherimoya.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Cherries.jpg" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Custard Apple.gif" height="80px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Date Fruit.gif"></div></td> </tr>
+                        <tr> <td><div class="pic-name">Apple</div></td> <td><div class="pic-name">Banana</div></td> <td><div class="pic-name">Blueberries</div></td> <td><div class="pic-name">Cherimoya</div></td> <td><div class="pic-name">Cherries</div></td> <td><div class="pic-name">CustardApple</div></td> <td><div class="pic-name">Date Fruit</div></td> </tr>
+
+                        <tr> <td><div class="pic-img"><img src="ojt fruits/Elderberries.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Feijoa.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Gooseberries.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Grapefruit.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Guava.jpg"></div></td> <td><div class="pic-img"><img src="ojt fruits/Jackfruit.gif" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Java Plum.gif" height="100px"></div></td>  </tr> 
+                        <tr> <td><div class="pic-name">Elderberries</div></td> <td><div class="pic-name">Feijoa</div></td> <td><div class="pic-name">Gooseberries</div></td> <td><div class="pic-name">Grapefruit</div></td> <td><div class="pic-name">Guava</div></td>  <td><div class="pic-name">Jackfruit</div></td> <td><div class="pic-name">Java Plum</div></td> </tr>
+                        
+                        <tr> <td><div class="pic-img"><img src="ojt fruits/Kumquat.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Lemon.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Longan.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Loquat.gif" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Lychee.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Mango.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Mulberries.gif"></div></td>  </tr> 
+                        <tr> <td><div class="pic-name">Kumquat</div></td> <td><div class="pic-name">Lemon</div></td> <td><div class="pic-name">Longan</div></td> <td><div class="pic-name">Loquat</div></td> <td><div class="pic-name">Lychee</div></td>  <td><div class="pic-name">Mango</div></td> <td><div class="pic-name">Mulberries</div></td> </tr>
+                   
+                        <tr> <td><div class="pic-img"><img src="ojt fruits/Nectarine.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Olives.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Orange.gif" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Papaya.gif" width="120px" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Pineapple.jpg" height="100px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Plums.jpg"></div></td> <td><div class="pic-img"><img src="ojt fruits/Pomegranate.jpg" height="100px"></div></td>  </tr> 
+                        <tr> <td><div class="pic-name">Nectarine</div></td> <td><div class="pic-name">Olives</div></td> <td><div class="pic-name">Orange</div></td> <td><div class="pic-name">Papaya</div></td> <td><div class="pic-name">Pineapple</div></td>  <td><div class="pic-name">Plums</div></td> <td><div class="pic-name">Pomegranate</div></td> </tr>
+                        
+                        <tr> <td><div class="pic-img"><img src="ojt fruits/Prickly Pear.jpg" height="80px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Prunes.gif" height="80px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Raspberries.gif" height="80px"></div></td> <td><div class="pic-img"><img src="ojt fruits/Sapodilla.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Strawberries.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Tamarind.gif"></div></td> <td><div class="pic-img"><img src="ojt fruits/Watermelon.gif" height="100px"></div></td>  </tr> 
+                        <tr> <td><div class="pic-name">Prickly Pear</div></td> <td><div class="pic-name">Prunes</div></td> <td><div class="pic-name">Raspberries</div></td> <td><div class="pic-name">Sapodilla</div></td> <td><div class="pic-name">Strawberries</div></td>  <td><div class="pic-name">Tamarind</div></td> <td><div class="pic-name">Watermelon</div></td> </tr>
+
+                </table></div> 
+                <div class="con-report" id="con-report">        
+                    <div class="table-report"><table >            
+                        <tr><th>#</th><th>Product ID</th><th>Product Name</th><th>Quantity</th><th>Buy-Price</th><th>Sell-Price</th></tr>
+                        <tr><td>1</td><td>DFS001</td><td>Apple</td><td>70</td><td>13300</td><td>16800</td></tr>
+                        <tr><td>2</td><td>DFS002</td><td>Banana</td><td>100</td><td>6000</td><td>8000</td></tr>
+                        <tr><td>3</td><td>DFS003</td><td>Blueberries</td><td>30</td><td>2400</td><td>3000</td></tr>
+                        <tr><td>4</td><td>DFS004</td><td>Cherimoya</td><td>30</td><td>1800</td><td>2700</td></tr>
+                        <tr><td>5</td><td>DFS005</td><td>Cherries</td><td>70</td><td>5600</td><td>7000</td></tr>
+                        <tr><td>6</td><td>DFS006</td><td>Custard Apple</td><td>30</td><td>1200</td><td>1800</td></tr>
+                        <tr><td>7</td><td>DFS007</td><td>Date Fruit</td><td>80</td><td>8000</td><td>11200</td></tr>
+                        <tr><td>8</td><td>DFS008</td><td>Elderberries</td><td>30</td><td>2100</td><td>2700</td></tr>
+                        <tr><td>9</td><td>DFS009</td><td>Feijoa</td><td>40</td><td>1600</td><td>2400</td></tr>
+                        <tr><td>10</td><td>DFS010</td><td>Gooseberries</td><td>70</td><td>2800</td><td>4900</td></tr>
+                        <tr><td>11</td><td>DFS011</td><td>Grapefruit</td><td>90</td><td>8100</td><td>11700</td></tr>
+                        <tr><td>12</td><td>DFS012</td><td>Guava</td><td>90</td><td>3600</td><td>8100</td></tr>
+                        <tr><td>13</td><td>DFS013</td><td>Jackfruit</td><td>60</td><td>600</td><td>1800</td></tr>
+                        <tr><td>14</td><td>DFS014</td><td>Java Plum</td><td>40</td><td>1200</td><td>2400</td></tr>
+                        <tr><td>15</td><td>DFS015</td><td>Kumquat</td><td>40</td><td>1200</td><td>2000</td></tr>
+                    </table></div>
+                </div>
+                <div class="con-all" id="con-all" >        
+                    <div class="table-all"><table >            
+                        <tr><th>#</th><th>Product ID</th><th>Product Name</th><th>Quantity</th><th>Price</th></tr>
+                        <tr><td>1</td><td>DFS001</td><td>Apple</td><td>80</td><td>240</td></tr>
+                        <tr><td>2</td><td>DFS002</td><td>Banana</td><td>120</td><td>80</td></tr>
+                        <tr><td>3</td><td>DFS003</td><td>Blueberries</td><td>40</td><td>100</td></tr>
+                        <tr><td>4</td><td>DFS004</td><td>Cherimoya</td><td>40</td><td>90</td></tr>
+                        <tr><td>5</td><td>DFS005</td><td>Cherries</td><td>90</td><td>100</td></tr>
+                        <tr><td>6</td><td>DFS006</td><td>Custard Apple</td><td>40</td><td>60</td></tr>
+                        <tr><td>7</td><td>DFS007</td><td>Date Fruit</td><td>90</td><td>140</td></tr>
+                        <tr><td>8</td><td>DFS008</td><td>Elderberries</td><td>50</td><td>90</td></tr>
+                        <tr><td>9</td><td>DFS009</td><td>Feijoa</td><td>50</td><td>60</td></tr>
+                        <tr><td>10</td><td>DFS010</td><td>Gooseberries</td><td>80</td><td>70</td></tr>
+                        <tr><td>11</td><td>DFS011</td><td>Grapefruit</td><td>110</td><td>130</td></tr>
+                        <tr><td>12</td><td>DFS012</td><td>Guava</td><td>100</td><td>90</td></tr>
+                        <tr><td>13</td><td>DFS013</td><td>Jackfruit</td><td>70</td><td>30</td></tr>
+                        <tr><td>14</td><td>DFS014</td><td>Java Plum</td><td>60</td><td>60</td></tr>
+                        <tr><td>15</td><td>DFS015</td><td>Kumquat</td><td>50</td><td>50</td></tr>
+                    </table></div>
+                </div>
+                <div class="con-left">
+                    <div class="add-table" id="add-table">
+                        <table>
+                            <tr> <td colspan="3"><div class="stack-head">ADD STACK</div></td></tr>
+                            <tr> <td colspan="3"><div class="head-bor"></div></td>  </tr>
+                            <tr> <td>PRODUCT NAME</td> <td> </td> <td><div class="dropdown">
+                                <select class="dropdown-pro">
+                                    <option value="">None</option>
+                                    <option value="Apple">Apple</option>
+                                    <option value="Orange">Orange</option>                            
+                                    <option value="Grapes">Grapes</option>
+                                    <option vaalue="Goya">Goya</option></optgroup>
+                                </select></div></td> </tr>
+                            <tr> <td>QUANTITY <i class="italic">( kg )</i></td> <td> </td> <td><input type="textbox" class="stack-text"></td> </tr>
+                            <tr> <td>BUYING PRICE</td> <td> </td> <td><input type="textbox" class="stack-text"></td> </tr>
+                            <tr> <td>SELLING PRICE</td><td> </td>  <td><input type="textbox" class="stack-text"></td> </tr>                            
+                            <tr> <td colspan="3"><div class="stack-button"><input type="button"  value="ADD" class="button"></div></td>   </tr>
+                        </table>
+                    </div>  
+                    <div class="bill-table" id="bill-table">
+                        <table>
+                            <tr> <td colspan="3"><div class="stack-head">BILL SECTION</div></td></tr>
+                            <tr> <td colspan="3"><div class="head-bor"></div></td>  </tr>
+                            <tr> <td>PRODUCT NAME</td> <td> </td> <td><div class="dropdown">
+                                <select class="dropdown-pro">
+                                    <option value="">None</option>
+                                    <option value="Apple">Apple</option>
+                                    <option value="Orange">Orange</option>                            
+                                    <option value="Grapes">Grapes</option>
+                                    <option vaalue="Goya">Goya</option></optgroup>
+                                </select></div></td> </tr>
+                            <tr> <td>QUANTITY<i class="italic"> ( kg )</i></td> <td> </td> <td><input type="textbox" class="stack-text" ></td> </tr>
+                            <tr> <td>BILL AMOUNT</td> <td></td>  <td><input type="textbox" class="stack-text"></td> </tr>
+                            <tr> <td colspan="3"><div class="stack-button"><input type="button"  value="ADD" class="button"></div></td>   </tr>                        
+                        </table>
+                    </div>                  
+                </div>
+                <div class="con-table">
+                    <div class="con-min" id="con-min">
+                         <div  class="table-min"><table>
+                            <tr><th colspan="4">MIMINUM STACKS</th></tr>
+                            <tr><th>#</th><th>Product ID</th><th>Product Name</th><th>Quantity</th></tr>
+                            <tr><td>1</td><td>DFS021</td><td>Mulberries</td><td>15</td></tr>
+                            <tr><td>2</td><td>DFS016</td><td>Lemon</td><td>20</td></tr>
+                            <tr><td>3</td><td>DFS019</td><td>Lychee</td><td>25</td></tr>
+                            <tr><td>4</td><td>DFS030</td><td>Prunes</td><td>25</td></tr>
+                            <tr><td>5</td><td>DFS018</td><td>Loquat</td><td>30</td></tr>
+                            <tr><td>6</td><td>DFS025</td><td>Papaya</td><td>30</td></tr>
+                            <tr><td>7</td><td>DFS003</td><td>Blueberries</td><td>40</td></tr>
+                            <tr><td>8</td><td>DFS004</td><td>Cherimoya</td><td>40</td></tr>
+                            <tr><td>9</td><td>DFS006</td><td>Custard Apple</td><td>40</td></tr>
+                            <tr><td>10</td><td>DFS028</td><td>Pomegranate</td><td>45</td></tr>
+                        </table></div>
+                    </div>
+                    <div class="con-bill" id="con-bill">
+                    <div class="table-box">
+                        <div class="table-top"><table>
+                            <tr><th colspan="6">FRUIT SHOP BILL</th></tr>
+                            <tr><td colspan="6">THANKS FOR SHOPING ...</td></tr>
+                            <tr><td>DATE</td><td>11/08/2020</td><td colspan="3"></td><td><div class="stack-button"><input type="button" value="BILL" class="button"></div></td></tr>
+                            <tr><td>TIME</td><td>13:20</td><td colspan="3"></td><td><div class="click"><img src="click.gif" width="50px" height="40px"></div></td></tr>            
+                        </table></div>
+                        <div class="table-bottom"><table >            
+                            <tr><th>#</th><th>Product Name</th><th>Quantity</th><th>Price</th><th>Amount</th></tr>
+                            <tr><td>1</td><td>Banana</td><td>2</td><td>160</td><td>144</td></tr>
+                            <tr><td>2</td><td>Lemon</td><td>1</td><td>90</td><td>81</td></tr>
+                            <tr><td>3</td><td>Apple</td><td>3</td><td>720</td><td>648</td></tr>
+                            <tr><td>4</td><td>Mango</td><td>5</td><td>550</td><td>495</td></tr>
+                            <tr><td>5</td><td>Banana</td><td>1</td><td>80</td><td>72</td></tr>
+                            <tr><td>6</td><td>Watermelon</td><td>5</td><td>550</td><td>495</td></tr>
+                            <tr><td>7</td><td>Stawberries</td><td>1</td><td>150</td><td>135</td></tr>
+                            <tr><td>8</td><td>Sapodila</td><td>3</td><td>150</td><td>135</td></tr>
+                            <tr><td>9</td><td>Grapefruit</td><td>2</td><td>260</td><td>234</td></tr>
+                            <tr><td>10</td><td>Orange</td><td>2</td><td>280</td><td>252</td></tr>
+                            </table></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="clr"></div>                
+            </div>
+            <div class="clr"></div>
+        </div>
+        </div> 
+           
+    </body>
+</html>

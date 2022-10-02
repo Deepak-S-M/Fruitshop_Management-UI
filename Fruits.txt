@@ -1,0 +1,106 @@
+DFS001	Apple			240	190	 80		 
+DFS002	Banana			 80	 60	120	 
+DFS003	Blueberries		100	 80	 40	 
+DFS004	Cherimoya		 90	 60	 40	 
+DFS005	Cherries		100	 80	 90
+DFS006	Custard Apple		 60	 40	 40 
+DFS007	Date Fruit		140	100	 90
+DFS008	Elderberries		 90	 70	 50
+DFS009	Feijoa			 60	 40	 50
+DFS010	Gooseberries		 70	 40	 80
+DFS011	Grapefruit		130	 90	110 
+DFS012	Guava			 90	 40	100
+DFS013	Jackfruit		 30	 10	 70
+DFS014	Java Plum		 60	 30	 60	
+DFS015	Kumquat			 50	 30	 50
+DFS016	Lemon			 90	 70	 20
+DFS017	Longan			100	 70	 70
+DFS018	Loquat			 40	 20	 30
+DFS019	Lychee			 80	 50	 25
+DFS020	Mango			110	 70	 90
+DFS021	Mulberries		 40	 20	 15
+DFS022	Nectarine		 30	 10  	 30
+DFS023	Olives			 80	 60	110
+DFS024	Orange			140	100	 50
+DFS025	Papaya			100	 40	 30
+DFS026	Pineapple		 80	 60 	 85
+DFS027	Plums			 60	 30	 90
+DFS028	Pomegranate		 90	 70	 45	
+DFS029	Prickly Pear		 40	 30	 70
+DFS030	Prunes			 90	 60	 25
+DFS031	Raspberries		 70	 50	 80
+DFS032	Sapodilla		 50	 30	130
+DFS033	Strawberries		150	110	140
+DFS034	Tamarind		 70	 40	 45
+DFS035	Watermelon		110	 60	 90
+
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (1,'Apple',80,'kg',190,240)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (2,'Banana',120,'kg',60,80)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (3,'Blueberries',40,'kg',80,100)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (4,'Cherimoya',40,'kg',60,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (5,'Cherries',90,'kg',80,100)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (6,'Custard Apple',40,'kg',40,60)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (7,'Date Fruit',90,'kg',100,140)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (8,'Elderberries',50,'kg',70,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (9,'Feijoa',50,'kg',40,60)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (10,'Gooseberries',80,'kg',40,70)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (11,'Grapefruit',110,'kg',90,130)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (12,'Guava',100,'kg',40,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (13,'Jackfruit',70,'kg',10,30)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (14,'Java Plum',60,'kg',30,60)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (15,'Kumquat',50,'kg',30,50)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (16,'Lemon',20,'kg',70,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (17,'Longan',70,'kg',70,100)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (18,'Loquat',30,'kg',20,40)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (19,'Lychee',25,'kg',50,80)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (20,'Mango',90,'kg',70,110)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (21,'Mulberries',15,'kg',20,40)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (22,'Nectarine',30,'kg',10,30)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (23,'Olives',110,'kg',60,80)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (24,'Orange',50,'kg',100,140)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (25,'Papaya',30,'kg',40,100)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (26,'Pineapple',85,'kg',60,80)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (27,'Plums',90,'kg',30,60)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (28,'Pomegranate',45,'kg',70,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (29,'Prickly Pear',70,'kg',30,40)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (30,'Prunes',25,'kg',60,90)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (31,'Raspberries',80,'kg',50,70)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (32,'Sapodilla',130,'kg',30,50)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (33,'Strawberries',140,'kg',110,150)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (34,'Tamarind',45,'kg',40,70)
+
+INSERT INTO `tab_stock`(`Id`, `Name`, `Quantity`, `Unit`, `BuyingPrice`, `SellingPrice`) VALUES (35,'Watermelon',90,'kg',60,110)
